@@ -1,0 +1,26 @@
+.test-h {
+  padding: 10px;
+
+  view {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-clip: content-box;
+    background-size: cover;
+  }
+
+  .demo-text-1 {
+    background-image: url("https://636c-cloud1-8gfb5vcdfead22fc-1307862140.tcb.qcloud.la/image/swiper/RWLAmj.webp?sign=c946e6c5864216157a8562e7a2b81630&t=1634538385");
+  }
+
+  .demo-text-2 {
+    background-image: url("https://636c-cloud1-8gfb5vcdfead22fc-1307862140.tcb.qcloud.la/image/swiper/RWKCAD.webp?sign=4b92fbea1036c7872e698e7054ea9eac&t=1634538532");
+  }
+
+}
+
+.at-search-bar {
+  .at-search-bar__action {
+    background-color: #f3cf8b;
+  }
+}
