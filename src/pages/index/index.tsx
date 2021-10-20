@@ -1,23 +1,23 @@
-import { View } from '@tarojs/components'
-import { AtTabBar } from 'taro-ui'
+import {View} from '@tarojs/components'
+import {AtTabBar} from 'taro-ui'
 import './index.scss'
 import {useState} from "react";
 
 import Home from '../components/home/home';
+import Category from "../components/category/category";
 
 export default function () {
 
-  const [currentTab, setCurrentTab] = useState(0);
+  const [currentTab, setCurrentTab] = useState(1);
   // @ts-ignore
-  const [tabListData, setTabListData] = useState({
-    list: [
-      {title: '首页', iconType: 'home'},
-      {title: '分类', iconType: 'playlist'},
+  const [tabList, setTabListData] = useState([
+      {title: '首页', iconType: 'home', component: <Home />},
+      {title: '分类', iconType: 'playlist', component: <Category />},
       {title: '发现', iconType: 'streaming'},
       {title: '购物车', iconType: 'shopping-cart'},
       {title: '我的', iconType: 'user'}
     ]
-  })
+  )
 
   const clickTabBar = (value) => {
     setCurrentTab(value);
@@ -25,8 +25,10 @@ export default function () {
 
   return (
     <View className="index">
-      <Home></Home>
-      <AtTabBar className="tabBarBottom" current={currentTab} tabList={tabListData.list} onClick={clickTabBar} fixed />
+      {
+        tabList[currentTab].component
+      }
+      <AtTabBar className="tabBarBottom" current={currentTab} tabList={tabList} onClick={clickTabBar} fixed/>
     </View>
   )
 }
