@@ -1,0 +1,21 @@
+.category {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: rgba(247, 247, 247);
+
+  .menu {
+    .menu-item {
+      border: unset;
+      border-radius: unset;
+    }
+  }
+
+  .menu-display {
+    box-sizing: border-box;
+    background-color: rgb(249, 249, 249);
+    border-left: 1px solid rgba(192, 192, 192, 0.27);
+  }
+}
+
