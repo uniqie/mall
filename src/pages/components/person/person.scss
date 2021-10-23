@@ -1,0 +1,14 @@
+.authorize {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+
+  background-color: #D3D3D3AD;
+  z-index: 1000;
+
+  .card {
+    background-color: white;
+
+  }
+}

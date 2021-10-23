@@ -6,10 +6,10 @@
     "setting": {
         "urlCheck": false,
         "es6": false,
-        "enhance": true,
+        "enhance": false,
         "postcss": false,
         "preloadBackgroundData": false,
-        "minified": false,
+        "minified": true,
         "newFeature": false,
         "coverView": true,
         "nodeModules": false,
@@ -22,9 +22,9 @@
         "uploadWithSourceMap": true,
         "compileHotReLoad": false,
         "lazyloadPlaceholderEnable": false,
-        "useMultiFrameRuntime": true,
-        "useApiHook": true,
-        "useApiHostProcess": true,
+        "useMultiFrameRuntime": false,
+        "useApiHook": false,
+        "useApiHostProcess": false,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
@@ -41,5 +41,7 @@
         "useCompilerPlugins": false
     },
     "compileType": "miniprogram",
+    "cloudfunctionRoot": "cloud/",
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
     "condition": {}
 }
