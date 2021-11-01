@@ -2,8 +2,8 @@ import {Swiper, SwiperItem, View} from '@tarojs/components'
 import './home.scss';
 import {AtGrid, AtSearchBar} from "taro-ui";
 import {useState} from "react";
-import {AtGridItem} from "_taro-ui@3.0.0-alpha.10@taro-ui/types/grid";
 import ProductCard, {ProductItem} from "./product/productCard";
+import {AtGridItem} from "taro-ui/types/grid";
 
 const tempAtGridItems: Array<AtGridItem> = [
   {
