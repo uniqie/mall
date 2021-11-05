@@ -3,12 +3,17 @@
 
 
 ## Table of Contents
-- [Background](#background)
-- [Install](#install)
+- [Introduction](#introduction)
+- [Installation](#installation)
 - [Usage](#usage)
   - [Generator](#generator)
 - [Maintainers](#maintainers)
 - [License](#license)
 
-## Background
-It all started one day when my teacher gave me an assignment
+## Introduction
+It all started one day when my curriculum teacher gave us an assignment aimed to practice our all kinds of technologies. 
+
+And this repository's content is about developing mall with WeChat Mini-program.
+
+## Installation
+
